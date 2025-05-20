@@ -2,7 +2,7 @@ version: "2"
 
 services:
   runtime:
-    image: public.ecr.aws/nupano/nupano-runtime:<FILL IN WHEN INTEGRATION HAS STARTED>
+    image: ghcr.io/nupano/nupano-runtime:3.1.2
     environment:
       - SERVER_PORT=61100
       - NUPANO_APPS_DOCKER_HOST=unix:///var/run/balena.sock
@@ -17,11 +17,9 @@ services:
     ports:
       - 61100:61100/tcp
     labels:
-      io.balena.features.balena-socket: '1'
-
+      io.balena.features.balena-socket: "1"
 networks:
   nupano_network:
     driver: bridge
-
 volumes:
   nupano_data:
