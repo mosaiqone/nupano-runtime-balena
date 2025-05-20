@@ -4,92 +4,92 @@ description: >-
   NUPANO runtime using BalenaOS integrated in BalenaCloud.
 post-provisioning: >-
   OEMs need and want to differentiate themselves from competition by integrating IT software in their machines and plants. NUPANO is a tool for machine builders to integrate and manage their own as well as 3rd party digital services (Apps) at machine and plant level. NUPANO Lenze enables you to handle such Apps in an easy way - even with a growing installed base. It gives you full transparency on which App in which version is running on which machine.
-  
+
   ## Overall Features
-  
+
   -	Cloud based open automation platform
-  
+
   -	Machine management
-  
+
   -	App management
-  
+
   -	NUPANO App Store for Public and own apps, even for open source apps
-  
+
   -	diverse partner community 
-  
+
   -	Community Hub
-  
+
   ## Support for machine builders
-  
+
   -	App sharing and testing
-  
+
   -	App life cycle/update management
-  
+
   -	App release and publish workflow
-  
+
   -	App configuration and preset data
-  
+
   -	App reconfiguration in machine context
-  
+
   -	App handling ensured securely
-  
+
   -	Machine data management
-  
+
   -	Machine fleet management
-  
+
   -	Machine models for mass customization
-  
+
   ## Technical concept 
-  
+
   NUPANO consists of:
-  
+
   1. **The NUPANO Cloud platform**<br>
-  
+
   Machine builders manage their machine fleet as well as all their apps and the assignment to specific machines. The cloud software part of NUPANO is a fully modular and dynamic multitenant microservice architecture.
-  
-  
+
+
   2. **The NUPANO Runtime**<br>
-  
+
   It requires a Docker infrastructure on an X86 64-bit architecture. It can be e.g. an Industry PC or an Edge device at machine and plant level where the machine-related apps are executed.
-  
+
   ## Runtime configuration
-  
+
   The NUPANO runtime can be configured via environment variables.  
-  
+
   |Entry|Description|Values|
-  
+
   |--|--|--|
-  
+
   |NUPANO_DESCRIPTION_MANUFACTURER|Name of manufacturer of hardware which runs the NUPANO Runtime|default: not specified|
-  
+
   |NUPANO_DESCRIPTION_MODEL_NAME|Model name of hardware|default: not specified|
-  
+
   |NUPANO_DESCRIPTION_SERIAL_NUMBER|Serial number of hardware|default: Unique ID of the NUPANO Runtime|
-  
+
   ## Join the NUPANO community!
-  
+
   Visit [nupano.com](https://nupano.com) and find out more. Get in touch with us via mail nupano@lenze.com. Then you will be onboarded to the platform and get access to the NUPANO Community Hub.
-  
+
   ## About Lenze
-  
+
   Lenze is a leading automation specialist and focuses on the design of efficient and sustainable production and material flow processes. The company supports its customers from the mechanical and plant engineering sector in digitalization and helps them to reduce costs, optimize capacity utilization and plant lifecycles as well as reduce their energy consumption. Lenze's portfolio includes high-quality mechatronic solutions, high-performance hardware and software systems alongside Digital Services.
-  
-  
+
+
   Subject to NUPANO [Terms of Use](https://store.nupano.com/nupano-terms-of-use.html) and [Privacy Policy](https://store.nupano.com/privacy-policy.html)
-  
+
 assets:
   repository:
     type: blob.asset
     data:
-      url: 'https://github.com/mosaiqone/nupano-runtime-balena'
+      url: "https://github.com/mosaiqone/nupano-runtime-balena"
   logo:
     type: blob.asset
     data:
       url: >-
         https://raw.githubusercontent.com/mosaiqone/nupano-runtime-balena/master/logo.png
 data:
-  defaultDeviceType: genericx86-64-ext  
+  defaultDeviceType: genericx86-64-ext
   supportedDeviceTypes:
     - genericx86-64-ext
     - generic-amd64
-version: 3.1.1
+version: 3.1.2
