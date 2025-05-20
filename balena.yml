@@ -92,4 +92,5 @@ data:
   supportedDeviceTypes:
     - genericx86-64-ext
     - generic-amd64
+
 version: 3.1.2
